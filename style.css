@@ -1,0 +1,182 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(Background-image/romantic-background-with-colorful-bubble-hearts-vector-4181345.jpg);
+    background-size: cover;
+
+
+
+}
+#board {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-Rows: 150px 150px 150px;
+    cursor: pointer;
+    position: relative;
+    border: 0.75em solid rgb(161, 158, 158);
+    border-style: outset;
+}
+
+.tile {
+    color: rgb(161, 158, 158);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    background-image: url(Background-image/images.jpg);
+    background-size: 150px 150px;
+    
+}
+
+h1 {
+    color: rgb(179, 115, 115);
+    font-size: 3.5em;
+    
+}
+
+.right-border {
+    border-right: 0.2em solid rgb(161, 158, 158);
+    border-style: outset;
+}
+
+.bottom-border {
+    border-bottom: 0.2em solid rgb(161, 158, 158);
+    border-style: outset;
+}
+
+.strike{
+    position: absolute;
+    background-color: rgb(196, 104, 104);
+}
+
+.strike-row-1 {
+    width: 100%;
+    height: 10px;
+    top: 15%;
+}
+
+.strike-row-2 {
+    width: 100%;
+    height: 10px;
+    top: 48%;
+}
+
+.strike-row-3 {
+    width: 100%;
+    height: 10px;
+    top: 83%;
+}
+
+.strike-column-1 {
+    height: 100%;
+    width: 10px;
+    left: 15%;
+}
+
+.strike-column-2 {
+    height: 100%;
+    width: 10px;
+    left: 48%;
+}
+
+.strike-column-3 {
+    height: 100%;
+    width: 10px;
+    left: 83%;
+}
+
+.strike-diagonal-1 {
+    height: 10px;
+    width: 90%;
+    left: 5%;
+    top: 50%;
+    transform: skewY(45deg);
+}
+
+.strike-diagonal-2 {
+    height: 10px;
+    width: 90%;
+    left: 5%;
+    top: 50%;
+    transform: skewY(-45deg);
+}
+
+#game-over-area {
+    border: 0.4em solid rgb(161, 158, 158);
+    padding: 50px;
+    margin: 5%;
+    text-align: center;
+    background-image: url(Background-image/images.jpg);
+    background-size: cover;
+    
+}
+
+h2 {
+    color: rgb(182, 196, 150);
+    font-size: 3em;
+    margin-top: 0px;
+}
+
+button {
+    background-color: transparent;
+    color: greenyellow;
+    padding: 10px;
+    font-size: 1.5em;
+    border: 1px solid greenyellow;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.x-hover:hover::after {
+    content: "X";
+    opacity: 0.4;
+}
+
+.o-hover:hover::after {
+    content: "0";
+    opacity: 0.4;
+}
+
+@media only screen and (max-width: 490px) {
+    #board {
+        grid-template-columns: 75px 75px 75px;
+        grid-template-Rows: 75px 75px 75px;
+        border: 0.4em solid rgb(161, 158, 158);
+    }
+    
+    .tile {
+        font-size: 1.5em;
+        background-size: 75px 75px;
+    }
+
+        #game-over-area {
+            border: 0.4em solid rgb(161, 158, 158);
+            padding: 25px;
+            margin: 5%;
+            width: 175px;
+            height: 100px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 1em;
+
+    }
+}
