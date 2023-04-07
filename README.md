@@ -13,4 +13,4 @@ breaking something down and putting it back together, is absolutely essential to
 
 This was a great achievement for my skill developement.
 
-Live page: https://mphojames9.github.io/Tic-Tac-Toe/
+Live page: https://mphojames9.github.io/tic-tac-toe/
