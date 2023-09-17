@@ -77,6 +77,24 @@ h1 {
     font-size: 1.8em;
     font-family: 'Mr Dafoe';
     text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
+    /*opacity: 0.00;
+	transition: 1s all ease-in-out;
+	-moz-transition: 1s all ease-in-out;
+	-webkit-transition: 1s all ease-in-out;*/
+}
+
+/*.tile:hover {
+    opacity: 1.00;
+}*/
+
+@keyframes textFade{
+    0% {
+        opacity:0;
+    }
+
+    100% {
+        opacity:0;
+    }
 }
 
 
