@@ -1,10 +1,14 @@
-const tiles = document.querySelectorAll(".tile");
+const tiles = Array.from(document.querySelectorAll(".tile"));
 const player_X = "X";
 const player_O = "O";
 const gameOverSec = document.querySelector(".gameOver");
 const game = document.querySelector(".game");
 const results = document.querySelector(".WinnerText");
+const turnDisplay = document.querySelector(".turn");
 let turn = player_X;
+
+let winningText = getComputedStyle(document.body).getPropertyValue("--color");
+
 
 const boardState = Array(tiles.length);
 boardState.fill(null);
@@ -14,6 +18,7 @@ function startGame(){
 }
 
 function tileClick(e) {
+
     if(gameOverSec.classList.contains("visible")){
         return;
     }else{
@@ -22,19 +27,21 @@ function tileClick(e) {
         boardState[id-1] = turn;
         e.target.innerText = turn;
         if(checkWinner() !==false){
+            let winningIndicator = checkWinner()
+            winningIndicator.map(tile =>tiles[tile].style.backgroundColor = winningText)
                 results.innerHTML = `Player ${turn} wins`;
                 gameOverSec.classList.add("visible");
-                game.style.opacity = "0.07";
+                game.style.opacity = "1";
                 return;
         }
-
         turn = turn == player_X ? player_O : player_X;
         const allTilesFilledIn = boardState.every((tile) => tile !== null);
         if(allTilesFilledIn){
             results.innerHTML = "It's a Tie";
             gameOverSec.classList.add("visible");
-            game.style.opacity = "0.07";
+            game.style.opacity = "1";
     }}
+    turnDisplay.innerHTML = `Player ${turn}'s turn`;
 }}
 
 
