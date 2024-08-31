@@ -17,6 +17,11 @@ color: white;
 text-shadow: 2px 2px 2px black
 }
 
+hr {
+    background-color: #ffffff;
+    border: 2px solid white;
+}
+
 .item {
     margin: 0.4em;
 }
