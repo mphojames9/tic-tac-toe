@@ -2,6 +2,8 @@
 
 ## Build with HTML, CSS and Javascript
 
+![alt text](example.JPG)
+
 ## What i have learned
 * Tic Tac Toe is a simple ruleset that flexes the basic concepts in programming,
 like data structures for storing the board, conditional logic for knowing whose
@@ -25,4 +27,4 @@ difficulty at four levels:
 Choose X or O and let the game begin!
 ##
 
-<p align="left"><a href="https://mphojames9.github.io/tic-tac-toe/">Click here</a>To start playing or view live page</p>
+<p align="left"><a href="https://mphojames9.github.io/tic-tac-toe/">Click here</a> to start playing or view live page</p>
