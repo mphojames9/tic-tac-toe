@@ -2,9 +2,9 @@
 
 ## Build with HTML, CSS and Javascript
 
-![alt text](example.JPG)
+![alt text](example.jpg)
 
-## What i have learned
+## Learning outcomes
 * Tic Tac Toe is a simple ruleset that flexes the basic concepts in programming,
 like data structures for storing the board, conditional logic for knowing whose
 turn it is or if someone has won.
@@ -13,7 +13,7 @@ turn it is or if someone has won.
 that we can then put together to create a complete game. This process of decomposition and synthesis,
 breaking something down and putting it back together, is absolutely essential to programming.
 
-* This was a great achievement for my skill developementas a bigginer
+* This was a great achievement for my skill developementas a beginner
 
 ## About game
 * The game is AI powered, meaning that you can play against the computer with any difficulty level of your choice.
